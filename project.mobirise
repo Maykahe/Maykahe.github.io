@@ -1,0 +1,703 @@
+{
+  "settings": {
+    "name": "My Site-clone-clone",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#073b4c",
+        "secondaryColor": "#7f1933",
+        "successColor": "#232323",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Pacifico",
+        "display1Size": "1.6",
+        "display2Font": "Rubik",
+        "display2Size": "3",
+        "display5Font": "Rubik",
+        "display5Size": "1.6",
+        "display7Font": "Oswald",
+        "display7Size": "1.4",
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#ff0000",
+        "#f7eabe",
+        "#faefcb",
+        "#5e4e4e",
+        "#4b4747"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "siteFonts": [
+      {
+        "css": "'Oswald', sans-serif",
+        "name": "Oswald",
+        "url": "https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700"
+      },
+      {
+        "css": "'Pacifico', handwriting",
+        "name": "Pacifico",
+        "url": "https://fonts.googleapis.com/css?family=Pacifico:400"
+      }
+    ],
+    "versionFirst": "4.7.6",
+    "uniqCompNum": 60,
+    "versionPublish": "4.10.8",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h3": {
+              "text-align": "center"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#073b4c",
+              "font-weight": "300"
+            },
+            ".mbr-content-text": {
+              "color": "#767676"
+            },
+            ".panel-item when not (@transparentBg)": {
+              "background": "@cardBg"
+            },
+            ".card": {
+              "word-wrap": "break-word"
+            },
+            ".mbr-iconfont": {
+              "font-size": "80px",
+              "color": "#149dcc"
+            },
+            ".mbr-section-title": {
+              "color": "#073b4c",
+              "text-align": "center"
+            },
+            "H4": {
+              "color": "#073b4c"
+            },
+            ".mbr-section-subtitle DIV": {
+              "text-align": "center"
+            }
+          },
+          "_name": "counters1",
+          "_customHTML": "<section class=\"counters1 counters\" group=\"Counters\" plugins=\"ViewportChecker\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"7\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitle\" checked>\n\n        <input type=\"checkbox\" title=\"Заголовок\" name=\"showTitles\" checked>\n        <input type=\"checkbox\" title=\"Текст\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Иконки\" name=\"showIcons\" checked>\n\n        <select title=\"Число карт\" name=\"cardsAmount\">\n           <option value=\"1\">1</option>\n           <option value=\"2\">2</option>\n           <option value=\"3\" selected>3</option>\n           <option value=\"4\">4</option>\n        </select>\n        \n        <input type=\"checkbox\" title=\"Transparent BG\" name=\"transparentBg\">\n        <input type=\"color\" title=\"Card Bg\" name=\"cardBg\" value=\"#f7eabe\" condition=\"!transparentBg\">\n        \n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"@PROJECT_PATH@/assets/images/mbr-1-1920x1236.jpeg\" selected parallax>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Фоновое видео\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#cebfaf\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <h2 class=\"mbr-section-title pb-3 align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b><i>Дапаможнік<br>ЦТ на 100 балаў</i></b></h2>\n        <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Жывое ў вяках беларускае слова –\n<div>Народа душа і народа хвала.\n</div><div>Цябе абзывалі “мужыцкаю мовай”,\n</div><div>А нам жа ты матчынай мовай была<br>Алесь Бачыла</div></h3>\n\n        <div class=\"container pt-4 mt-2\">\n            <div class=\"media-container-row\">\n                <div class=\"card p-3 align-center col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n                    <div class=\"panel-item\" mbr-class=\"{'p-3':!transparentBg}\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                            <a href=\"dapamozhnikprshutak.html\"><span mbr-icon class=\"mbr-iconfont mbri-opened-folder\"></span></a>\n                        </div>\n\n                        <div class=\"card-text\">\n                            <h3 class=\"count pt-3 pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">-</h3>\n                            <h4 class=\"mbr-content-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\"><a href=\"dapamozhnikprshutak.html\"><b>Правільны сшытак</b></a></h4>\n                            <p class=\"mbr-content-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-content-text\">Дапаможа табе ,дружа, даведацца пра шмат правіл!<br>Адкрый перад тым, як рабіць практыкаванні.</p>\n                        </div>\n                    </div>\n                </div>\n\n\n                <div class=\"card p-3 align-center col-12 col-md-6\" mbr-if=\"cardsAmount>1\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n                    <div class=\"panel-item\" mbr-class=\"{'p-3':!transparentBg}\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                            <a href=\"dmzhnkmenu.html\"><span mbr-icon class=\"mbr-iconfont mbri-touch\"></span></a>\n                        </div>\n                        <div class=\"card-text\">\n                            <h3 class=\"count pt-3 pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">-</h3>\n                            <h4 class=\"mbr-content-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\"><a href=\"dmzhnkmenu.html\">Практыкаванні</a></h4>\n                            <p class=\"mbr-content-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-content-text\">Памыліўся? <br>Спрабуй яшчэ раз &nbsp;:)</p>\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"card p-3 align-center col-12 col-md-6\" mbr-if=\"cardsAmount>2\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n                    <div class=\"panel-item\" mbr-class=\"{'p-3':!transparentBg}\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"mbr-iconfont mbri-like\"></span>\n                        </div>\n                        <div class=\"card-text\">\n                            <h3 class=\"count pt-3 pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">-</h3>\n                            <h4 class=\"mbr-content-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">Цікавасці</h4>\n                            <p class=\"mbr-content-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-content-text\">...</p>\n                        </div>\n                    </div>\n                </div>\n\n\n                <div class=\"card p-3 align-center col-12 col-md-6\" mbr-if=\"cardsAmount>3\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n                    <div class=\"panel-item\" mbr-class=\"{'p-3':!transparentBg}\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"mbri-hot-cup mbr-iconfont\"></span>\n                        </div>\n\n                        <div class=\"card-texts\">\n                             <h3 class=\"count pt-3 pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">\n                                  400\n                            </h3>\n                            <h4 class=\"mbr-content-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">\n                                Веб-шрифты\n                            </h4>\n                            <p class=\"mbr-content-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-content-text\">\n                                    Google имеет обширный список шрифтов, скомпилированных на его веб-платформе. Mobirise может легко и свободно использовать их на вашем сайте\n                            </p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n   </div>\n</section>",
+          "_anchor": "counters1-d",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "rAqRkX4UNp",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".title": {
+              "margin-bottom": "2rem"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            "a:not([href]):not([tabindex])": {
+              "color": "#fff",
+              "border-radius": "3px"
+            },
+            "a.btn-white:not([href]):not([tabindex])": {
+              "color": "#333"
+            },
+            "textarea.form-control": {
+              "min-height": "188px"
+            }
+          },
+          "_name": "form1",
+          "_customHTML": "<section class=\"mbr-section form1\" group=\"Forms\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"6\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitle\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Фоновое видео\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#c1c1c1\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"title col-12 col-lg-8\">\n                <h2 mbr-if=\"showTitle\" class=\"mbr-section-title align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">Давай знаёміцца!</h2>\n                <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\">-</h3>\n            </div>\n        </div>\n    </div>\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div mbr-form class=\"media-container-column col-lg-8\">\n                <!---Formbuilder Form--->\n                <form action=\"voyshnismaya@gmail.com\" name=\"Mobirise Form\" method=\"POST\" class=\"mbr-form form-with-styler\">\n                    <div class=\"row\">\n                        <div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">ДЗЯКУЙ!</div>\n                        <div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\">\n                        </div>\n                    </div>\n                    <div class=\"dragArea row\">\n                        <div class=\"col-md-4  form-group\" data-for=\"name\">\n                            <label mbr-text mbr-theme-style=\"display-7\" for=\"name\" class=\"form-control-label mbr-fonts-style\">Імя</label>\n                            <input type=\"text\" name=\"name\" data-form-field=\"Name\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\">\n                        </div>\n                        <div class=\"col-md-4  form-group\" data-for=\"email\" hidden=\"hidden\">\n                            <label mbr-text mbr-theme-style=\"display-7\" for=\"email\" class=\"form-control-label mbr-fonts-style\" hidden=\"hidden\">Email</label>\n                            <input type=\"email\" name=\"email\" data-form-field=\"Email\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\" hidden=\"hidden\">\n                        </div>\n                        <div data-for=\"phone\" class=\"col-md-4  form-group\">\n                            <label mbr-text mbr-theme-style=\"display-7\" for=\"phone\" class=\"form-control-label mbr-fonts-style\">Тэлефон</label>\n                            <input type=\"tel\" name=\"phone\" data-form-field=\"Phone\" mbr-theme-style=\"display-7\" class=\"form-control\">\n                        </div>\n                        <div data-for=\"message\" class=\"col-md-12 form-group\" hidden=\"hidden\">\n                            <label mbr-text mbr-theme-style=\"display-7\" for=\"message\" class=\"form-control-label mbr-fonts-style\" hidden=\"hidden\">Сообщение</label>\n                            <textarea name=\"message\" data-form-field=\"Message\" mbr-theme-style=\"display-7\" class=\"form-control\" hidden=\"hidden\"></textarea>\n                        </div>\n                        <div class=\"col-md-12 input-group-btn align-center\" mbr-buttons=\"true\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd\"><a type=\"submit\" class=\"btn btn-primary btn-form\" data-app-placeholder=\"Введите Текст\">ГАТОВА</a></div>\n                    </div>\n                </form><!---Formbuilder Form--->\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rArBmgDZRk",
+          "_anchor": "form1-v",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "dapamozhnikprshutak.html": {
+      "settings": {
+        "meta_descr": "Web Site Generator Description",
+        "title": "Дапаможнік",
+        "order": 1
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h4": {
+              "text-align": "left",
+              "font-weight": "500"
+            },
+            "p": {
+              "color": "#767676",
+              "text-align": "left",
+              "margin-bottom": "0"
+            },
+            ".card-img": {
+              "text-align": "left",
+              "background-color": "@cardsBg",
+              "border-bottom-right-radius": "0",
+              "border-bottom-left-radius": "0",
+              "padding": "3rem 2.5rem 0 2.5rem"
+            },
+            ".card-img span": {
+              "font-size": "72px",
+              "color": "#707070"
+            },
+            ".card-box": {
+              "padding": "0rem 2.5rem 3rem 2.5rem",
+              "background-color": "@cardsBg"
+            }
+          },
+          "_name": "features6",
+          "_customHTML": "<section class=\"features6\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Текст\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Карты - Фон\" name=\"cardsBg\" value=\"#ffffff\">\n        <select title=\"Число карт\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"@PROJECT_PATH@/assets/images/mbr-2-1920x1280.jpg\" parallax selected>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#efefef\">\n            <input type=\"video\" title=\"Фоновое видео\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img pb-3\">\n                    <span mbr-icon class=\"mbri-bootstrap mbr-iconfont\"></span>\n                </div>\n                <div class=\"card-box\">\n                    <h4 class=\"card-title py-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\"><a href=\"dapamozhnikmenu.html\">Арфаграфія</a></h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">---------------------------------------------------------------------------------<br>--------------------------<br>---------------------------------------------------------------------------------\n<br>---------------------------\n<br><br></p>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img pb-3\">\n                    <span mbr-icon class=\"mbr-iconfont mbri-edit\"></span>\n                </div>\n                <div class=\"card-box\">\n                    <h4 class=\"card-title py-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\"><a href=\"page15.html\">Сінтаксіс&nbsp;</a></h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">---------------------------------------------------------------------------------\n<br>---------------------------&nbsp;<br>---------------------------------------------------------------------------------\n<br>---------------------------&nbsp;<br><br></p>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img pb-3\">\n                    <span mbr-icon class=\"mbr-iconfont mbri-align-center\"></span>\n                </div>\n                <div class=\"card-box\">\n                    <h4 class=\"card-title py-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\"><a href=\"page16.html\">Марфалогія</a></h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">---------------------------------------------------------------------------------\n<br>---------------------------&nbsp;<br>---------------------------------------------------------------------------------\n<br>---------------------------&nbsp;<br><br></p>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img pb-3\">\n                    <span mbr-icon class=\"mbri-desktop mbr-iconfont\"></span>\n                </div>\n                <div class=\"card-box\">\n                    <h4 class=\"card-title py-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">\n                        Безлимитно\n                    </h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                       Mobirise дает вам свободу разрабатывать столько сайтов, сколько вам нравится, при том что это настольное приложение.\n                    </p>\n                </div>\n            </div>\n\n        </div>\n\n    </div>\n\n</section>",
+          "_cid": "rAqVOFE9fs",
+          "_anchor": "features6-f",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "dapamozhnikmenu.html": {
+      "settings": {
+        "meta_descr": "Site Builder Description",
+        "title": "Арфаграфия змест",
+        "order": 2
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".counter-container": {
+              "color": "#767676",
+              "ul": {
+                "margin-bottom": "0",
+                "li": {
+                  "margin-bottom": "1rem",
+                  "& when (@stylizedCounters)": {
+                    "list-style": "none",
+                    "&:before": {
+                      "position": "absolute",
+                      "left": "0px",
+                      "margin-top": "-10px",
+                      "padding-top": "3px",
+                      "content": "''",
+                      "display": "inline-block",
+                      "text-align": "center",
+                      "margin": "5px 10px",
+                      "line-height": "20px",
+                      "transition": "all .2s",
+                      "color": "contrast(@counterColor)",
+                      "background": "@counterColor",
+                      "width": "25px",
+                      "height": "25px",
+                      "border-radius": "50%",
+                      "& when (@countersType = 'circle')": {
+                        "background": "none",
+                        "border": "1px solid @counterColor",
+                        "color": "@counterColor"
+                      },
+                      "& when (@countersType = 'square')": {
+                        "border-radius": "0"
+                      },
+                      "& when (@mark)": {
+                        "content": "'✓'"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            ".mbr-text": {
+              "color": "#4b4747"
+            }
+          },
+          "_name": "content12",
+          "_customHTML": "<section class=\"mbr-section article content12\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Стилизованные маркеры\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Цвет маркера\" name=\"counterColor\" value=\"#149dcc\" condition=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Стилизованные маркеры\" name=\"stylizedCounters\" checked>\n        <input type=\"checkbox\" title=\"Метка\" name=\"mark\" checked condition=\"stylizedCounters\">\n        <select title=\"Тип маркера\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\">Круг с заливкой</option>\n            <option value=\"circle\" selected>Круг</option>\n            <option value=\"square\">Квадрат</option>\n        </select>   \n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#efefef\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text counter-container col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                <ul>\n                    <li><a href=\"dapamozhnikmiakkiznak.html\" class=\"text-success\"><i>Правапіс Ь</i></a></li><li><a href=\"page7.html\" class=\"text-success\"><i>Правапіс А/О/Э/Ы/</i></a></li><li><a href=\"page11.html\" class=\"text-success\"><i>Правапіс падоўжаных зычных</i></a></li>\n                    <li><a href=\"page12.html\" class=\"text-success\"><i>Правапіс падвоенных зычных</i></a></li>\n                    <li><a href=\"page8.html\" class=\"text-success\"><i>Правапіс У/Ў</i></a></li><li><a href=\"page13.html\" class=\"text-success\"><i>Правапіс Е/Ё/Я</i></a></li><li><a href=\"page9.html\" class=\"text-success\"><i>Правапіс Ы/І/Й пасля прыставак</i></a></li><li><a href=\"page17.html\" class=\"text-success\"><i>Правапіс галосных у складаных словах</i></a></li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rMq2q2BYHx",
+          "_anchor": "content12-1n",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "dapamozhnikmiakkiznak.html": {
+      "settings": {
+        "meta_descr": "Website Builder Description",
+        "title": "ПРАВАПІС Ь ",
+        "order": 3
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "& when (@reverseContent)": {
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-left": "4rem"
+                }
+              },
+              "@media (max-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-top": "1rem"
+                }
+              }
+            },
+            "& when not (@reverseContent)": {
+              ".media-container-row": {
+                "flex-direction": "row-reverse",
+                "-webkit-flex-direction": "row-reverse"
+              },
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-right": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".media-container-row": {
+                  "flex-wrap": "wrap-reverse",
+                  "-webkit-flex-wrap": "wrap-reverse"
+                },
+                ".mbr-figure": {
+                  "padding-bottom": "1rem"
+                }
+              }
+            },
+            ".mbr-text": {
+              "color": "#4f4943",
+              "text-align": "left"
+            },
+            "P": {
+              "text-align": "left"
+            }
+          },
+          "_name": "content7",
+          "_customHTML": "<section class=\"mbr-section content7\" group=\"Article\">\n          \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->   \n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Размер медиа\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"10\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Text On Right/Left\" name=\"reverseContent\"> \n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12\" mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\">\n                <div class=\"media-container-row\">\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text align-right mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"></p><p>*<i>Мяккі знак пішацца</i>: <br>1)пасля зычных <b>&nbsp;[З'] [С'] [ДЗ'] [Ц'] [Л] [Л'] [Н'] </b>перад галоснымі <b>Е Ё Я Ю І</b><br><b>&nbsp; </b><i>мільён<b>, </b>паштальён<b>, </b>кампаньён</i> &nbsp;<b>АЛЕ: булён, нюанс</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>2) на канцы слоў пасля <b>[ДЗ'] [Ц'] [З'] [С'] [Л'] [Н']<br></b><i>&nbsp;роўнядзь, памяць, лось<br></i>3)у сярэдзіне слова пасля <b>МЯККАГА</b> зычнага перад <b>ЦВЁРДЫМ &nbsp; &nbsp; </b><i>малацьба, бацька, пісьмо</i><br>4)паміж дзвюма <b>МЯККІМІ</b> зычнымі калі пры змяненні слова другі зычны становіцца цвёрдым, а першы застаецца мяккім<br><i>цьмяны-цьма, дзьме-дзьмуць</i><br>5)пасля [л'], перад зычным, акрамя л<br><i>вельмі , гульня</i><br>6)у складаных лічэбніках<br><i>пяцьдзясят, шэсцьдзясят, пяцьсот <b>АЛЕ</b> восемсот</i><br>7)у займенніках і прыслоўях з постфіксам сьці<br><i>хтосьці, кагосьці<br></i>8)прыслоўе <b>ЛЕДЗЬВЕ&nbsp;<br></b>9)суфкісы прыметнікаў<b> эньк, еньк, аньк<br></b><i>маленькі, старэнькі<br></i>10) перад суфіксам <b>СК</b> у прыметніках , утвораных ад назваў месяцаў на нь<br><i>чэрвень-чэрвеньскі, ліпень-ліпеньскі І ВОСЕНЬ-ВОСЕНЬСКІ</i><br>11)<i> </i>у дзеясловах загаднага ладу перад постфіксам <b>ся</b>, перад <b>ць</b> у форме 2 асобы, множнага ліку, калі у гэтых дзеяловах у адзіночным ліку, 2 асобы дзеяловы заканчываюца на <b>Ь&nbsp;</b><br><i>кіньце- кінь, сядзьце-сядзь,</i><b> </b><i>сустрэнься-сустрэнь</i><br>12)перад канчаткам <b>мі</b> у назоўніках 1 скл. мн.л.<br><i>дзецьмі, людзьмі</i><br>13)перад суфіксам <b>чык</b> у назоўніках,якія заканч. на нь<br><i>агеньчык- агонь, каменьчык- камень</i> <i><b>АЛЕ вагончык-вагон</b><br>14)</i>перад канчаткам<b> ма </b>дзеясловаў 1 ас., мн.л.<br><i>кіньма, гляньма</i></p><br><p><i>*Мяккі знак не пішацца:</i><br>1)паміж <b>падоўж.</b> зычнымі<br><i>жыцце, насенне<br>2)</i>перад <b>[В']</b> (асіміляцыя па мяккасці)<br><i>цверды, дзверы, абедзве</i><br>3) <b>МЕНШ , ІНШЫ<br></b>4)пасля губных на канцы слова<br><i>стэп, верф, голуб<br></i>5)у прыметніках утвораных пры дапамозе суфікса <b>ск</b> ад назоўнікаў з асновай на <b>нь<br></b><i>Гырынь- гарынскі, Любань-любанскі<br></i>6)у кітайскіх назвах<br><i>Цянь-Шань -- цянь-шанскі</i><br><br></p><br><p>*<i>Апостраф &nbsp;пішацца:</i><br>1)пасля прыставак, якія заканчваюцца на зычную, перад е, ё,<br>ю, я, і &nbsp; &nbsp;аб'ехаць, аб'інець<br>2)у сярэдзіне слова пасля губных <b>(Б, В, М, П, Ф)</b> і пасля <b>Г К Х<br></b>сям'я, &nbsp;вераб'і, &nbsp;В'етнам<br>3) пасля зацвярдзелых зычных <b>( Р, Ц, Ж, Ш, Ч, ДЖ, ДЗ, Ў)<br></b>бар'ер, надвор'е<br>4)пасля цвёрдых <b>Д</b> і <b>Т &nbsp; &nbsp; &nbsp; </b>д'ябал, Сант'яга<br>5) У складаных словах 1-ая частка якіх<b> ДВУХ, &nbsp;ТРОХ, ЧАТЫРОХ, ШМАТ &nbsp; &nbsp; &nbsp; &nbsp;</b>трох'ярусны, шмат'ёмісны &nbsp;&nbsp;<br><b>!!!!! &nbsp;</b>Ін'екцыя, кан'юктывіт, кан'юнктура, кан'югацыя /цэхячэйка, дзяржюрвыдаведства<br><br></p><p></p>\n                        </div>\n                    </div>\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                     <img src=\"@PROJECT_PATH@/assets/images/mbr-714x476.jpeg\" alt=\"Mobirise\" title>  \n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rAr2qMvaru",
+          "_anchor": "content7-m",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page7.html": {
+      "settings": {
+        "meta_descr": "Site Builder Description",
+        "title": "ПРАВАПІС А/ О/ Э/ Ы ",
+        "order": 4
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#465052"
+            }
+          },
+          "_name": "content3",
+          "_customHTML": "<section mbr-id=\"_anchor\" mbr-paddings class=\"mbr-section article content3\">\n      \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"4\">\n        <select title=\"Число карт\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n        </select>\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->     \n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"row col-12\" mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\">\n                <div class=\"col-12 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-article data-app-selector=\".mbr-text\" data-multiline mbr-class=\"{'col-md-6': cardsAmount == 2, 'col-md-12': cardsAmount == 1, 'col-md-4': cardsAmount == 3}\">\n                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Правапіс <b>О, Э, А, Ы<br>1) О, Э, А, Ы &nbsp;</b>пішуцца пад націскам;<br><i>Бор, дарога, рэха, рыба</i><br><b>2) О, Э</b><i> </i>не пад націскам пераходзяць<i> у </i><b>&nbsp;А</b><br><i>цэгла- цагляны;</i><br><i>торт-тарты;</i><br><b>3) А</b><i> </i>пішацца ў даўнозапазычаных<br><i>адрас, латарэя, рамонт, сакрэт, характарыстыка, часнок, Шаўчэнка, шавялюра, далікатэс, далікатны, чамадан, радыска;</i><br><b>4)</b> <b>Ро, ло</b><i>, </i>пераходзяць у<b> ры, лы</b><br><i>Кроў- крывавы;</i><br><i>Дрома-дрымота</i><br><i>Брод-брысці<br></i><b>5)</b> У словах <b>СЭНС, ТЭРМІН, ЦЭНТР</b> і ўтв. ад іх<br><i>асэнсаваць, цэнтральны, нонсэнс</i><br><b>6)</b><i> </i>Літара <b>Э </b>не пад націскам пішацца:<br>а) у пачатку іншамоўных слоў&nbsp;<br><i>экскурсія, экзамен, эпоха</i><br>б) у сярэдзіне іншамоўных слоў пасля зацвярдзелых (ж,ш,дж,ч,р,ц,дз) і пасля д, <i>жэтон, чэмпіён, рэспубліка, дэмакратыя, цэнзура, шэдэўр, дрэсіраваць, гардэроб<br></i><b>7)</b> Не націскныя канцоўкі <b>эр, эль</b> у запазычаных не пад націскам пераходзяць у ар, аль<br>Кампэютар, пэйджар, лідар<br><b>АЛЕ: Одэр, Юпітэр, Ландэр, Лютэр<br>8)</b> Ы у слове <b>ЯБЛЫК</b> і вытворных ад яго, у словах <b>ЗАРЫВА, МАРЫВА<br>9) Ы </b>ў запазычаных<br><i>Брызент, горыч, цырымонія, рысора, канцылярыя, дыстанцыя, дырыжор, хрысціцель, арышт, почырк, трывога, глыбіня, інцыдзент, дынаміт, фрыцюр, хрыбет<br><br><br>ЗАПОМНІ!!!<br>Лопух, фольга, сыроватка, наготкі, коклюш, форзац, феномен,поцемкі, куродым,&nbsp;<br></i><br><br><br></p>\n                </div>\n                <div class=\"col-12 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline mbr-class=\"{'col-md-6': cardsAmount == 2, 'col-md-4': cardsAmount == 3}\" mbr-if=\"cardsAmount > 1\">\n                     <p><br></p>\n                </div>\n                <div class=\"col-12 col-md-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline mbr-if=\"cardsAmount > 2\">\n                     <p>Сделайте свой собственный сайт в несколько кликов! Mobirise помогает сократить время разработки, предоставляя вам гибкий редактор сайтов с интерфейсом перетаскивания. Mobirise-конструктор создает отзывчивый, адаптивный сайт в несколько кликов и является одним из самых простых инструментов разработки сайтов, доступных сегодня. Это дает свободу развивать столько сайтов, сколько нравится, при том что это настольное приложение.</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rBH0mPIr3Q",
+          "_anchor": "content3-15",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page8.html": {
+      "settings": {
+        "meta_descr": "Website Maker Description",
+        "title": "ПРАВАПІС У /Ў",
+        "order": 7
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content3",
+          "_customHTML": "<section mbr-id=\"_anchor\" mbr-paddings class=\"mbr-section article content3\">\n      \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"4\">\n        <select title=\"Число карт\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n        </select>\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->     \n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"row col-12\" mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\">\n                <div class=\"col-12 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-article data-app-selector=\".mbr-text\" data-multiline mbr-class=\"{'col-md-6': cardsAmount == 2, 'col-md-12': cardsAmount == 1, 'col-md-4': cardsAmount == 3}\">\n                     <p><b>Ў</b> пішацца:<br><b>1)</b> Пасля галосных<br><i>ва ўніверсітэце, ледзьве учуў, казаў, фаўна.</i></p><p><i><br></i></p>\n                </div>\n                <div class=\"col-12 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline mbr-class=\"{'col-md-6': cardsAmount == 2, 'col-md-4': cardsAmount == 3}\" mbr-if=\"cardsAmount > 1\">\n                     <p><b>АЛЕ: ТРАУР<br>2) </b>Пасля \" &nbsp;\" <b>&nbsp;</b><br><i>Прагучала \"ўра\".<br>Ордэн \"Знак пашаны\" ўручаны.<br><br><b>3)</b> </i>Пасля злучка&nbsp;<br><i>жанчына- ўрач, цвяточна-ўрачыста.</i><br><br><i>4) </i>Пры чаргаванні <b>[в]</b> &nbsp;з <b>[ў]</b><br><i>кроў, лаўка, любоў.</i><br><br><b>АЛЕ: рака Влтава, армія В'етнама </b><i>&nbsp;<br><br><b>5)</b> </i>Пры чаргаванні &nbsp; [л]  з [ў] &nbsp;<i>&nbsp;</i><br><i>паўметра, мыў</i><br><br><b>АЛЕ: балкон, памылка, сеялка, Алжыр, Волга, Албанія, Валдай, палка.</b><br><br><b>У пішацца:</b><br><br><b>1) </b>Пасля знакаў прыпынку<b> (, ; : - . ? !)<br><br>2)</b>Пасля зычнай літары папярэдняга слова&nbsp;<br><i>Перад універсітэтам.</i><br><br><b>3</b><i>) </i>У канцы запазычаных слоў на<i> </i><i style=\"font-weight: bold;\">оу ау.</i><br><i>Ток-шоу, ноу-хау, фрау.<br><br><b>4)</b> </i>У пад націскам<br><i>унія, &nbsp;унты, аул, баул, іудзейскі.</i><br><br><b>5)</b> У запазычаных словах на ум ус<br><i>соус, страус, кансіліум.</i></p><p><b>6)</b> Вялікая літара</p><p><i>Ва Узбекістане, да Узяслава.<br><br><br></i></p>\n                </div>\n                <div class=\"col-12 col-md-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline mbr-if=\"cardsAmount > 2\">\n                     <p>Сделайте свой собственный сайт в несколько кликов! Mobirise помогает сократить время разработки, предоставляя вам гибкий редактор сайтов с интерфейсом перетаскивания. Mobirise-конструктор создает отзывчивый, адаптивный сайт в несколько кликов и является одним из самых простых инструментов разработки сайтов, доступных сегодня. Это дает свободу развивать столько сайтов, сколько нравится, при том что это настольное приложение.</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rBMXDG3sqt",
+          "_anchor": "content3-16",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page9.html": {
+      "settings": {
+        "meta_descr": "Website Builder Description",
+        "title": "ПРАВПІС Ы/І/Й ПАСЛЯ ПРЫСТАВАК",
+        "order": 9
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content3",
+          "_customHTML": "<section mbr-id=\"_anchor\" mbr-paddings class=\"mbr-section article content3\">\n      \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"4\">\n        <select title=\"Число карт\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n        </select>\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->     \n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"row col-12\" mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\">\n                <div class=\"col-12 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-article data-app-selector=\".mbr-text\" data-multiline mbr-class=\"{'col-md-6': cardsAmount == 2, 'col-md-12': cardsAmount == 1, 'col-md-4': cardsAmount == 3}\">\n                     <p><b>Правапіс Ы І Й пасля прыставак</b></p><p><b>Й</b> пішацца:<br>1) Калі прыставка заканчваецца &nbsp;на <b>галосны</b> на месцы І пішацца Й<br><i>за+ісці=зайсці</i><br>2) У словах <b>займаць, наймаць, пераймаць, перайманне, &nbsp;праймаць</b>.<br>3) Заўсёды пішацца у прыстаўке <b>НАЙ</b><br><i>найменш, найлепш</i><br>4) У прыслоўях<br><i>па-твойму, па-мойму.<br></i><br><b>І </b>пішацца:<br>1) Пасля прыставкі на галосны (калі <b>ўтварае склад</b>)<br><i>заікацца, заіка, заіскрыцца, заінець, праіснаваць<br></i>2)Пасля прыставак<br><b>Звыш, між, пан, супер , гіпер, транс, пост, інтэр, контр</b><br><i>Звышімклівы, суперінфекцыя.<br></i>3) У <b>складанаскарочаных</b>, калі 1-ая частка заканчваецца на цвёрды зычны<br><span style=\"font-size: calc(1.175rem + (0.325 * ((100vw - 20rem) / 28)));\"><i>Бортінжынер, спортінвентар, дзяржінспектар.</i><br><i>4) </i><b>Пасля ЭКС</b><br><i>экс-інжынер<br>5) &nbsp;</i>Літара<b> І</b> <b>выпадае</b>, калі яна прыстаўная<br><i>Імчаць- прымчаць. заржаць, зардзецца</i><br><br><b>Ы пішацца:</b><br>1)Пасля прыставак <b>на зычны&nbsp;</b><br><i>Абысці, узысці, зымправізаваць, дэзынфекцыя</i></span></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>\n                </div>\n                <div class=\"col-12 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline mbr-class=\"{'col-md-6': cardsAmount == 2, 'col-md-4': cardsAmount == 3}\" mbr-if=\"cardsAmount > 1\">\n                     <p><br></p>\n                </div>\n                <div class=\"col-12 col-md-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline mbr-if=\"cardsAmount > 2\">\n                     <p>Сделайте свой собственный сайт в несколько кликов! Mobirise помогает сократить время разработки, предоставляя вам гибкий редактор сайтов с интерфейсом перетаскивания. Mobirise-конструктор создает отзывчивый, адаптивный сайт в несколько кликов и является одним из самых простых инструментов разработки сайтов, доступных сегодня. Это дает свободу развивать столько сайтов, сколько нравится, при том что это настольное приложение.</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rBRBORNa1h",
+          "_anchor": "content3-17",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page11.html": {
+      "settings": {
+        "meta_descr": "Web Site Generator Description",
+        "title": "ПРАВАПІС ПАДОЎЖАНЫХ ЗЫЧНЫХ",
+        "order": 5
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content3",
+          "_customHTML": "<section mbr-id=\"_anchor\" mbr-paddings class=\"mbr-section article content3\">\n      \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"4\">\n        <select title=\"Число карт\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n        </select>\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->     \n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"row col-12\" mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\">\n                <div class=\"col-12 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-article data-app-selector=\".mbr-text\" data-multiline mbr-class=\"{'col-md-6': cardsAmount == 2, 'col-md-12': cardsAmount == 1, 'col-md-4': cardsAmount == 3}\">\n                     <p><b>Правапіс падоўжаных зычных</b></p><p><b><br></b></p>\n                </div>\n                <div class=\"col-12 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline mbr-class=\"{'col-md-6': cardsAmount == 2, 'col-md-4': cardsAmount == 3}\" mbr-if=\"cardsAmount > 1\">\n                     <p><b>Падаўжэнне</b> - фанетычная з'ява.<br>Адбываецца:<br>1) У назоўніках<b> паміж галоснымі</b> : <i>галлё, сучча.</i><br>2) У лічэбніках ад<b> 11-20 і 30</b>.<br>3) У<b> Т.скл</b>. лічэбнікі <b>5, 9-20, 30, 50</b><br><i>Дваццаццю, шасцюдзесяццю.</i><br>4) У <b>Т.скл</b>. назоўнікі <b>3-ага скл</b>анення:<br><i>ноччу, печчу.</i><br>5) У суфіксах <b>ОНН, ЕНН, ЁНН, ЭНН&nbsp;</b><br><i>таўшчэнны.</i><br>6) У прыметніках утвораных ад назоўнікаў на <b>МЯ</b><br><i>племя-племянны<br></i><br><i><b>АЛЕ: палымяны, сцюдзёны.</b></i><br><br>7) У суфіксах назоўнікаў <b>ННІК, ЭННІК, ЕННІК, ЯННІК</b><br><br><b><i>АЛЕ: стаўленік, язвенік.</i></b><br><br><b>ЧАСТЫЯ ВЫПАДЫ:</b><br>ванна, Ганна, Бонна, Дзіванна, донна, дурра, манна, мірра, панна, мадонна, мецца- сапрына, саваннаЮ эскадрылля, Жанна, Сюзанна, Мекка<br><br><b>Не адбываееца:<br></b><br>1) У <b>запазычаных</b> словах: <i>тона, група, шаса, масаж, калона, праграма, артылерыя, класіка, балада, алея.</i><br>2) У словах Ілья, Ульян, Касьян, Гальян і вытворных ад іх.<br>3)У суфіксах<b> ЫН, ІН, АН, ЯН</b> &nbsp;прыметнікаў<br><i>салаўіны, курыны, драўляны<br></i><br><b><i>АЛЕ: гасціны,стараны.</i></b><br><br>4)У суфіксах <i>Н, ЕН, АН </i>дзеепрыметніка<br><i>напісаны, складзены.</i><br><br></p>\n                </div>\n                <div class=\"col-12 col-md-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline mbr-if=\"cardsAmount > 2\">\n                     <p>Сделайте свой собственный сайт в несколько кликов! Mobirise помогает сократить время разработки, предоставляя вам гибкий редактор сайтов с интерфейсом перетаскивания. Mobirise-конструктор создает отзывчивый, адаптивный сайт в несколько кликов и является одним из самых простых инструментов разработки сайтов, доступных сегодня. Это дает свободу развивать столько сайтов, сколько нравится, при том что это настольное приложение.</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rBSOmNeZKw",
+          "_anchor": "content3-19",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page12.html": {
+      "settings": {
+        "meta_descr": "Web Site Maker Description",
+        "title": "ПРАВАПІС ПАДВОЕННЫХ ЗЫЧНЫХ",
+        "order": 6
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content3",
+          "_customHTML": "<section mbr-id=\"_anchor\" mbr-paddings class=\"mbr-section article content3\">\n      \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"4\">\n        <select title=\"Число карт\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n        </select>\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->     \n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"row col-12\" mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\">\n                <div class=\"col-12 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-article data-app-selector=\".mbr-text\" data-multiline mbr-class=\"{'col-md-6': cardsAmount == 2, 'col-md-12': cardsAmount == 1, 'col-md-4': cardsAmount == 3}\">\n                     <p><b>Правапіс падвоеных зычных</b><br><br><b>Падваенне</b>- марфалагічная з'ява<br><br><b>Адбываецца:</b><br>1) На стыку <b>прыстаўкі і кораня</b><br><i>аддаць, бяззубы</i><br><br><b>АЛЕ: разявіць, узлаваць, узлавацца.&nbsp;<br></b><br>2)На стыку <b>састаўных частак</b> складаных слоў<br><i>омметр, юннат</i><br>3) На стыку <b>кораня і суфікса&nbsp;</b><br><i>дзённік, каменны</i><br><br><b>АЛЕ: матрос+ск= матроскі</b><br></p><p><b>Не адбываецца</b>:&nbsp;<br>1) У словах расада, расаднік, расольнік, ростань<br><br>АЛЕ: рассаднік(крыніца размн.)</p>\n                </div>\n                <div class=\"col-12 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline mbr-class=\"{'col-md-6': cardsAmount == 2, 'col-md-4': cardsAmount == 3}\" mbr-if=\"cardsAmount > 1\">\n                     <p><br></p>\n                </div>\n                <div class=\"col-12 col-md-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline mbr-if=\"cardsAmount > 2\">\n                     <p>Сделайте свой собственный сайт в несколько кликов! Mobirise помогает сократить время разработки, предоставляя вам гибкий редактор сайтов с интерфейсом перетаскивания. Mobirise-конструктор создает отзывчивый, адаптивный сайт в несколько кликов и является одним из самых простых инструментов разработки сайтов, доступных сегодня. Это дает свободу развивать столько сайтов, сколько нравится, при том что это настольное приложение.</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rBSS7vK3K0",
+          "_anchor": "content3-1a",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page13.html": {
+      "settings": {
+        "meta_descr": "Web Page Creator Description",
+        "title": "ПРАВАПІС Е/Ё/Я",
+        "order": 8
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text, blockquote": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Правапіс Е Ё Я\n</b><div><b>\n</b></div><div>1.  Е Ё Я пад <b>націскам\n.</b></div><div><i>Вёска, елка, яма.</i>\n</div><div>\n<span style=\"font-size: 1.4rem;\">2. У <b>першым складзе</b> перад націскам Е Ё -) Я (яканне).</span></div><div><i>Землі- зямля.</i><br>3. У іншых складах Е<br><i>Возера, зеленаваты.</i><br>4. У некаторых запазычаных словах у 1-ым складзе перад нацсікам пішацца Е і <b>пасля ГКХ.</b><br><i>Легенда, медаль, алегорыя, медуза, Гераіня, кефір </i>&nbsp; &nbsp;\n</div><div>5. Я ў спрадвечных словах (<b>каранёвае</b>).<br><i>Цяжкаваты, тысяча, месяц, мянтуз, заляскатаць</i>.<br>6. Прыназоўнік <b>БЕЗ</b>, часціца <b>НЕ.</b><br>7. Е у <b>пачатку</b> некаторых запазычаных слоў.<br><i>Егер, ерэтык, Еўропа, Ерэван.</i><br>8. <b>На канцы</b> запазычаных нязменых слоў<br>пасля<b> -л-, -к- </b>пішацца <b>Е.</b><br><i>Філе, піке, камюніке, сальта-мартале</i><br><br><b>ЗАПАЗЫЧАНЫЯ ЕЕЕ:</b><br><i>Кентаўр, манекен, абеліск, кавалер, апетыт, балерына, бензінавы, бюлетэнь,веранда, калектыў, кампетэнцыя, сенсацыя, склероз, легальны, медаль, метровы, галерэя, метр, генерал, магнетызм, сеанс, пейзаж, метал, Неапаль, легенда, герой, медуза,спектакль, сезон, кефір, нерв, Перун, перон, бенефіс, механік, цверцюра, метал.</i><br><br><b>КАРАНЁВАЕ ЯЯЯ</b>:<br><i>Месяц, заяц, пояс, цягнікі , святкаванне, мяккаваты, лямантаваць, Прыпяць, памяць, маятніковы, ясяневы, вынянчыць, Якубовіч, Яраслаў, якарок, сеялка, веялка, лаянка, паядзінак, Ярына, дзесяць, Ярмаленка, завязь, Віцязь, сувязь. яравы,поввязь , памяць, тысяча, дзевяць, Япрук, СВіцязь, роўнядзь, выгляд, кашляць, муляць, баяць, заляскатаць, дробязь, мянтуз.<br></i><br><b>ДАЎНОЗАПАЗЫЧАНЫЯ:</b><br><i><b>Я</b></i><br><i>дзяжурны, сяржант, яфрэйтар, янот, яўрэй, нянавісць, каляндар,мячэць, валяр'ян, яхідны, Аляксей, Валянціна, Веньямін, Сяргей, пяць, пяцярня, пяцерыка.<br><br><b>Е</b><br>Засень, вестуны, заедзь, замець, цецярук, цяцерка, цецерукі.</i><br><br><br></div></div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rCrZgHrHar",
+          "_anchor": "content1-1c",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page14.html": {
+      "settings": {
+        "meta_descr": "Web Site Generator Description",
+        "title": "Знакі прыпынку ў бязлучнікавым сказе",
+        "order": 12
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#232323",
+              "text-align": "left"
+            },
+            "H2": {
+              "color": "#073b4c"
+            },
+            ".mbr-section-subtitle P": {
+              "text-align": "left"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Кнопки\" name=\"showButtons\">\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\"><b>Знакі прыпынку ў бязлучнікавым сказе</b></h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-1\"><p><b>, ставіцца:<br></b>- Паміж часткамі адносіны <b>паслядоўнасці</b> або <b>адначасовасці</b><br>&nbsp; &nbsp; <i>Мінулася поле, пачаўся рэдкі лес.<br>&nbsp; &nbsp; Кукавала зязюля ў зялёным лесе, гадавала матуля дачушку Алесю.</i></p><b><br></b><br><b>; ставіцца:</b><br><p>-Часткі маюць<b> свае знакі прыпынку<br></b>&nbsp; &nbsp; <i>Але растацца нам час наступае; пэўна, ужо доля такая ў нас</i><br>- <b>Сэнсавая сувязь</b> паміж часткамі <b>не цесная<br></b>&nbsp; &nbsp; <i>Адспявала лета песні, усе сабрала каласы; пад сасонкамі , на ўзлессі расцвітаюць каласы.</i></p><br><br><p><b>: ставіцца:</b><br><i>1)</i> Другая частка указвае на <b>прычыну</b>, можна ўставіць <b>БО , ТАМУ ШТО<br></b>&nbsp; &nbsp; <i>Антось, як сонца засвяціўся: даўно аб чоўне ён смуціўся.<br>2)</i> Другая частка <b>раскрывае змест</b> першай, можна ўставіць <b>А ІМЕННА<br></b>&nbsp; &nbsp; <i>Ціха было ў навакольных лясах: супакоілася птаства, не шапацелі дрэвы.<br>3)</i> Другая частка з'яўляецца <b>дапаўняльнай</b>, можна ўставіць <b>ШТО, ЯК<br></b>&nbsp; &nbsp; <i>Я чую: палае кроў ад іскры першай бліскавіцы.<br>4)</i> Другая частка - гэта<b> прамое пытанне<br></b>&nbsp; &nbsp; <i>Усе з трывогай паглядалі на неба: ці не набліжаецца навальніца?<br>5)</i> Другая частка<b> ўдакладняе, дапаўняе </b>першую, можна ўставіць <b>І ПАЧУЎ ШТО, І АДЧУЎ ШТО, І УБАЧЫЎ ШТО<br></b>&nbsp; &nbsp; <i>Азірнуўся дзядзька Марцін: нікога не відаць.<br></i>6) Першая заканчваецца на <b>словы</b>:<br>бачыць, ведаць, верыць, глядзець, разгледзець, чуць , зразумець, разумець, казаць і г.д.<br>&nbsp; &nbsp; <i>Я думаў: гэта сон прысніўся мне.<br></i>7) <b>Першая</b> частка з'яўляецца <b>абагульняльнай</b> да наступных<br>&nbsp; &nbsp; <i>У нас было шмат да гаворкі прычын: над садам вясна рассыпала пялёсткі , чарэмшынай цвіла далячынь.<br></i>8) У першай частцы сустракаюцца словы <b>УСЁ АДНО, ВОСЬ ШТО<br></b>&nbsp; &nbsp; <i>Мне паведамілі вось што:паехала Зося ў горад вучыцца.</i></p><br><br><p><b>-- ставіцца:<br></b>1) Калі першая частка сказа паказвае на <b>час або ўмову</b> таго, пра што гаворыцца ў сказе, можна ўставіць <b>КАЛІ<br></b>&nbsp; &nbsp; <i>Адчынеш ціха фортку - павее халадок.<br></i>2) Змест частак <b>супрацьпастаўляееца</b>, можна ўставіць <b>А, АЛЕ<br></b>&nbsp; &nbsp; <i>Дожджык мочыць - сонца сушыць.</i><br>3) Гаворыцца пра<b> хуткую змену падзей , нечаканы вынік, </b>можна ўставіць<b> і, аж</b><br>4) <b>Апошняя</b> частка з'яўляецца <b>абагульняльнай</b> да папярэдніх<br>&nbsp; &nbsp; <i>Дол засланы шышкамі , цвіце сунічнік, бруснічнік,звіняць камары - усё тут знаёма.<br></i>5) Другая частка <b>параўноўваецца</b> з першай, можна ўставіць <b>БЫ, БЫЦЦАМ, ЯК, ЯК БЫЦЦАМ<br></b>&nbsp; &nbsp; <i>Слова сказаў- сякераю адсёк.<br></i>6)<b> Другая </b>частка пачынаецца<b> словамі </b>ГЭТА, ТАК, ТАКІ, ТО<br>&nbsp; &nbsp; Ніхто нікога не зразумеў - гэта было відаць.<br><br></p></h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.co\">ПОДРОБНЕЕ</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.co\">ДЕМО</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rF62UV6M5y",
+          "_anchor": "content4-1h",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page15.html": {
+      "settings": {
+        "meta_descr": "Website Builder Description",
+        "title": "Сінтаксіс",
+        "order": 11
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".counter-container": {
+              "color": "#767676",
+              "ul": {
+                "margin-bottom": "0",
+                "li": {
+                  "margin-bottom": "1rem",
+                  "& when (@stylizedCounters)": {
+                    "list-style": "none",
+                    "&:before": {
+                      "position": "absolute",
+                      "left": "0px",
+                      "margin-top": "-10px",
+                      "padding-top": "3px",
+                      "content": "''",
+                      "display": "inline-block",
+                      "text-align": "center",
+                      "margin": "5px 10px",
+                      "line-height": "20px",
+                      "transition": "all .2s",
+                      "color": "contrast(@counterColor)",
+                      "background": "@counterColor",
+                      "width": "25px",
+                      "height": "25px",
+                      "border-radius": "50%",
+                      "& when (@countersType = 'circle')": {
+                        "background": "none",
+                        "border": "1px solid @counterColor",
+                        "color": "@counterColor"
+                      },
+                      "& when (@countersType = 'square')": {
+                        "border-radius": "0"
+                      },
+                      "& when (@mark)": {
+                        "content": "'✓'"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "_name": "content12",
+          "_customHTML": "<section class=\"mbr-section article content12\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Стилизованные маркеры\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Цвет маркера\" name=\"counterColor\" value=\"#149dcc\" condition=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Стилизованные маркеры\" name=\"stylizedCounters\" checked>\n        <input type=\"checkbox\" title=\"Метка\" name=\"mark\" checked condition=\"stylizedCounters\">\n        <select title=\"Тип маркера\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Круг с заливкой</option>\n            <option value=\"circle\">Круг</option>\n            <option value=\"square\">Квадрат</option>\n        </select>   \n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text counter-container col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article><a href=\"page14.html\">\n                </a><ul><a href=\"page14.html\">\n                    </a><li><a href=\"page14.html\">Знакі прыпынку ў бязлучнікавым сказе</a></li><a href=\"page14.html\">\n                </a></ul><a href=\"page14.html\">\n            </a></div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rF6bMtaCss",
+          "_anchor": "content12-1i",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page16.html": {
+      "settings": {
+        "meta_descr": "Website Builder Description",
+        "title": "Марфалогия",
+        "order": 13
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".counter-container": {
+              "color": "#767676",
+              "ol": {
+                "margin-bottom": "0",
+                "li": {
+                  "margin-bottom": "1rem"
+                },
+                "& when (@stylizedCounters)": {
+                  "counter-reset": "myCounter",
+                  "li": {
+                    "list-style": "none",
+                    "padding-left": ".5rem",
+                    "&:before": {
+                      "position": "absolute",
+                      "left": "0px",
+                      "margin-top": "-10px",
+                      "counter-increment": "myCounter",
+                      "content": "counter(myCounter)",
+                      "display": "inline-block",
+                      "text-align": "center",
+                      "margin": "5px 10px",
+                      "line-height": "40px",
+                      "transition": "all .2s",
+                      "color": "contrast(@counterColor)",
+                      "background": "@counterColor",
+                      "width": "40px",
+                      "height": "40px",
+                      "border-radius": "50%",
+                      "& when (@squareCounters)": {
+                        "border-radius": "0"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "_name": "content11",
+          "_customHTML": "<section class=\"mbr-section article content11\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Стилизованные маркеры\" name=\"stylizedCounters\" checked>\n        <input type=\"checkbox\" title=\"Квадратные маркеры\" name=\"squareCounters\" condition=\"stylizedCounters\">\n        <input type=\"color\" title=\"Цвет маркера\" name=\"counterColor\" value=\"#149dcc\" condition=\"stylizedCounters\">\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text counter-container col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                <ol>\n                    <li><br></li>\n                </ol>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rL2BO9U27W",
+          "_anchor": "content11-1j",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page17.html": {
+      "settings": {
+        "meta_descr": "Web Page Maker Description",
+        "title": "ПРАВАПИС ГАЛОСНЫХ У СКЛАДАНЫХ",
+        "order": 10
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text, blockquote": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\"><p><b>1)</b>Калі ў <b>2-ой </b>часцы складанага слова <b>націск на першым складзе</b>,то ў 1-ай часцы пішацца <b>А</b><br><b>&nbsp; </b><i>Мнагазначны, драбналессе, бамбасховішча.</i></p><p><b>2)</b><i> </i>Калі <b>ў 2-ой </b>часцы <b>не падае на першы</b> склад, то ў 1-ай часцы пішацца <b>О</b><br><b>&nbsp;</b><i>Бавоўнапрадзільны, добразычлівы, востравугольны.</i></p><p><b>3)</b><i> </i>ЗАЎСЁДЫ <i>&nbsp;</i><br><b>-ПАЎ &nbsp; &nbsp; &nbsp; &nbsp; </b><i>паўяблыка</i><br><b>-КІНА &nbsp; &nbsp; &nbsp; </b><i>кінаплёнка</i><i><br></i><b>-СТА &nbsp; &nbsp; &nbsp; &nbsp; </b><i>стапудовы</i></p><p><i>АЛЕ: поўнач, поўдзень. &nbsp; !(Полстакана= паў ста кіна)!</i></p><p><b>4)</b> <b>Э</b><i> </i>у першай часцы захоўваецца<br><i>&nbsp;Рэдказубы, шэравокі, тэлебачанне, арэхападобны.</i><br>акрамя выпадкаў з чаргаваннем ро\\ло - ры\\лы (<i>дровы-дрывасек</i>)</p><p><b>5) </b>ЗАЎСЁДЫ<b> О<br>-слова &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br>-што&nbsp;<br>-фота<br>-свое<br>-проці<br>-дзевяноста&nbsp;<br>-грос<br>-контр&nbsp;<br>-мова&nbsp;<br>-збожа<br>-азотна<br>-азона<br>-фонда</b><br>&nbsp;<i>Словаформа, контрудар, азотнакіслы, азонастойкі.</i><br>Паспрабуй уявіць і запомніць як казку :<br><i>!(ДзевянОста слОў штО кОнтр-адмірал усвОіў назОне, грОскапітан зафОтаграфаваў &nbsp;з умОвай фОнда прОціазОтназбОжа)!<br><b>АЛЕ: &nbsp;ФАТОГРАФ, ФАТАГРАФІЯ, МАТАВОЗ, МАТАЦЫКЛ, КАНТРАМАРКА, КАНТРАПУНКТ&nbsp;</b></i></p><p><i><b>7)</b></i> Калі<b> 2-ая</b> частка пачынаецца з <b>Ў</b>, то ў 1-ай пішацца <b>О</b></p><p><i>Торфаўборачны, марозаўстойлівы.</i><br><br><b>АЛЕ: КАЛАЎРОТ. </b>!(Дык што ў рот? :В)<br><br></p><p><br><br></p></div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rL2DxAfM2q",
+          "_anchor": "content1-1k",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
