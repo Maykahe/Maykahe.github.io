@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "My Site-clone-clone",
-    "currentPage": "dapamozhnikprshutak.html",
+    "currentPage": "dapamozhnikmenu.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -18,7 +18,7 @@
         "display2Font": "Rubik",
         "display2Size": "3",
         "display5Font": "Rubik",
-        "display5Size": "1.6",
+        "display5Size": "1",
         "display7Font": "Oswald",
         "display7Size": "1.4",
         "display4Font": "Rubik",
@@ -50,7 +50,7 @@
       }
     ],
     "versionFirst": "4.7.6",
-    "uniqCompNum": 60,
+    "uniqCompNum": 62,
     "versionPublish": "4.10.8",
     "screenshot": "screenshot.png"
   },
@@ -269,73 +269,9 @@
             }
           },
           "_name": "content12",
-          "_customHTML": "<section class=\"mbr-section article content12\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Стилизованные маркеры\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Цвет маркера\" name=\"counterColor\" value=\"#149dcc\" condition=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Стилизованные маркеры\" name=\"stylizedCounters\" checked>\n        <input type=\"checkbox\" title=\"Метка\" name=\"mark\" checked condition=\"stylizedCounters\">\n        <select title=\"Тип маркера\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\">Круг с заливкой</option>\n            <option value=\"circle\" selected>Круг</option>\n            <option value=\"square\">Квадрат</option>\n        </select>   \n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#efefef\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text counter-container col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                <ul>\n                    <li><a href=\"dapamozhnikmiakkiznak.html\" class=\"text-success\"><i>Правапіс Ь</i></a></li><li><a href=\"page7.html\" class=\"text-success\"><i>Правапіс А/О/Э/Ы/</i></a></li><li><a href=\"page11.html\" class=\"text-success\"><i>Правапіс падоўжаных зычных</i></a></li>\n                    <li><a href=\"page12.html\" class=\"text-success\"><i>Правапіс падвоенных зычных</i></a></li>\n                    <li><a href=\"page8.html\" class=\"text-success\"><i>Правапіс У/Ў</i></a></li><li><a href=\"page13.html\" class=\"text-success\"><i>Правапіс Е/Ё/Я</i></a></li><li><a href=\"page9.html\" class=\"text-success\"><i>Правапіс Ы/І/Й пасля прыставак</i></a></li><li><a href=\"page17.html\" class=\"text-success\"><i>Правапіс галосных у складаных словах</i></a></li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section article content12\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Стилизованные маркеры\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Цвет маркера\" name=\"counterColor\" value=\"#149dcc\" condition=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Стилизованные маркеры\" name=\"stylizedCounters\" checked>\n        <input type=\"checkbox\" title=\"Метка\" name=\"mark\" checked condition=\"stylizedCounters\">\n        <select title=\"Тип маркера\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\">Круг с заливкой</option>\n            <option value=\"circle\" selected>Круг</option>\n            <option value=\"square\">Квадрат</option>\n        </select>   \n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#efefef\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text counter-container col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                <ul>\n                    <li><a href=\"page18.html\" class=\"text-success\"><i>Правапіс Ь</i></a></li><li><a href=\"page7.html\" class=\"text-success\"><i>Правапіс А/О/Э/Ы/</i></a></li><li><a href=\"page11.html\" class=\"text-success\"><i>Правапіс падоўжаных зычных</i></a></li>\n                    <li><a href=\"page12.html\" class=\"text-success\"><i>Правапіс падвоенных зычных</i></a></li>\n                    <li><a href=\"page8.html\" class=\"text-success\"><i>Правапіс У/Ў</i></a></li><li><a href=\"page13.html\" class=\"text-success\"><i>Правапіс Е/Ё/Я</i></a></li><li><a href=\"page9.html\" class=\"text-success\"><i>Правапіс Ы/І/Й пасля прыставак</i></a></li><li><a href=\"page17.html\" class=\"text-success\"><i>Правапіс галосных у складаных словах</i></a></li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "rMq2q2BYHx",
           "_anchor": "content12-1n",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        }
-      ]
-    },
-    "dapamozhnikmiakkiznak.html": {
-      "settings": {
-        "meta_descr": "Website Builder Description",
-        "title": "ПРАВАПІС Ь ",
-        "order": 3
-      },
-      "components": [
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            "& when (@reverseContent)": {
-              "@media (min-width: 992px)": {
-                ".mbr-figure": {
-                  "padding-left": "4rem"
-                }
-              },
-              "@media (max-width: 992px)": {
-                ".mbr-figure": {
-                  "padding-top": "1rem"
-                }
-              }
-            },
-            "& when not (@reverseContent)": {
-              ".media-container-row": {
-                "flex-direction": "row-reverse",
-                "-webkit-flex-direction": "row-reverse"
-              },
-              "@media (min-width: 992px)": {
-                ".mbr-figure": {
-                  "padding-right": "4rem"
-                }
-              },
-              "@media (max-width: 991px)": {
-                ".media-container-row": {
-                  "flex-wrap": "wrap-reverse",
-                  "-webkit-flex-wrap": "wrap-reverse"
-                },
-                ".mbr-figure": {
-                  "padding-bottom": "1rem"
-                }
-              }
-            },
-            ".mbr-text": {
-              "color": "#4f4943",
-              "text-align": "left"
-            },
-            "P": {
-              "text-align": "left"
-            }
-          },
-          "_name": "content7",
-          "_customHTML": "<section class=\"mbr-section content7\" group=\"Article\">\n          \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->   \n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Размер медиа\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"10\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Text On Right/Left\" name=\"reverseContent\"> \n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12\" mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\">\n                <div class=\"media-container-row\">\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text align-right mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"></p><p>*<i>Мяккі знак пішацца</i>: <br>1)пасля зычных <b>&nbsp;[З'] [С'] [ДЗ'] [Ц'] [Л] [Л'] [Н'] </b>перад галоснымі <b>Е Ё Я Ю І</b><br><b>&nbsp; </b><i>мільён<b>, </b>паштальён<b>, </b>кампаньён</i> &nbsp;<b>АЛЕ: булён, нюанс</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>2) на канцы слоў пасля <b>[ДЗ'] [Ц'] [З'] [С'] [Л'] [Н']<br></b><i>&nbsp;роўнядзь, памяць, лось<br></i>3)у сярэдзіне слова пасля <b>МЯККАГА</b> зычнага перад <b>ЦВЁРДЫМ &nbsp; &nbsp; </b><i>малацьба, бацька, пісьмо</i><br>4)паміж дзвюма <b>МЯККІМІ</b> зычнымі калі пры змяненні слова другі зычны становіцца цвёрдым, а першы застаецца мяккім<br><i>цьмяны-цьма, дзьме-дзьмуць</i><br>5)пасля [л'], перад зычным, акрамя л<br><i>вельмі , гульня</i><br>6)у складаных лічэбніках<br><i>пяцьдзясят, шэсцьдзясят, пяцьсот <b>АЛЕ</b> восемсот</i><br>7)у займенніках і прыслоўях з постфіксам сьці<br><i>хтосьці, кагосьці<br></i>8)прыслоўе <b>ЛЕДЗЬВЕ&nbsp;<br></b>9)суфкісы прыметнікаў<b> эньк, еньк, аньк<br></b><i>маленькі, старэнькі<br></i>10) перад суфіксам <b>СК</b> у прыметніках , утвораных ад назваў месяцаў на нь<br><i>чэрвень-чэрвеньскі, ліпень-ліпеньскі І ВОСЕНЬ-ВОСЕНЬСКІ</i><br>11)<i> </i>у дзеясловах загаднага ладу перад постфіксам <b>ся</b>, перад <b>ць</b> у форме 2 асобы, множнага ліку, калі у гэтых дзеяловах у адзіночным ліку, 2 асобы дзеяловы заканчываюца на <b>Ь&nbsp;</b><br><i>кіньце- кінь, сядзьце-сядзь,</i><b> </b><i>сустрэнься-сустрэнь</i><br>12)перад канчаткам <b>мі</b> у назоўніках 1 скл. мн.л.<br><i>дзецьмі, людзьмі</i><br>13)перад суфіксам <b>чык</b> у назоўніках,якія заканч. на нь<br><i>агеньчык- агонь, каменьчык- камень</i> <i><b>АЛЕ вагончык-вагон</b><br>14)</i>перад канчаткам<b> ма </b>дзеясловаў 1 ас., мн.л.<br><i>кіньма, гляньма</i></p><br><p><i>*Мяккі знак не пішацца:</i><br>1)паміж <b>падоўж.</b> зычнымі<br><i>жыцце, насенне<br>2)</i>перад <b>[В']</b> (асіміляцыя па мяккасці)<br><i>цверды, дзверы, абедзве</i><br>3) <b>МЕНШ , ІНШЫ<br></b>4)пасля губных на канцы слова<br><i>стэп, верф, голуб<br></i>5)у прыметніках утвораных пры дапамозе суфікса <b>ск</b> ад назоўнікаў з асновай на <b>нь<br></b><i>Гырынь- гарынскі, Любань-любанскі<br></i>6)у кітайскіх назвах<br><i>Цянь-Шань -- цянь-шанскі</i><br><br></p><br><p>*<i>Апостраф &nbsp;пішацца:</i><br>1)пасля прыставак, якія заканчваюцца на зычную, перад е, ё,<br>ю, я, і &nbsp; &nbsp;аб'ехаць, аб'інець<br>2)у сярэдзіне слова пасля губных <b>(Б, В, М, П, Ф)</b> і пасля <b>Г К Х<br></b>сям'я, &nbsp;вераб'і, &nbsp;В'етнам<br>3) пасля зацвярдзелых зычных <b>( Р, Ц, Ж, Ш, Ч, ДЖ, ДЗ, Ў)<br></b>бар'ер, надвор'е<br>4)пасля цвёрдых <b>Д</b> і <b>Т &nbsp; &nbsp; &nbsp; </b>д'ябал, Сант'яга<br>5) У складаных словах 1-ая частка якіх<b> ДВУХ, &nbsp;ТРОХ, ЧАТЫРОХ, ШМАТ &nbsp; &nbsp; &nbsp; &nbsp;</b>трох'ярусны, шмат'ёмісны &nbsp;&nbsp;<br><b>!!!!! &nbsp;</b>Ін'екцыя, кан'юктывіт, кан'юнктура, кан'югацыя /цэхячэйка, дзяржюрвыдаведства<br><br></p><p></p>\n                        </div>\n                    </div>\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                     <img src=\"@PROJECT_PATH@/assets/images/mbr-714x476.jpeg\" alt=\"Mobirise\" title>  \n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "rAr2qMvaru",
-          "_anchor": "content7-m",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -347,7 +283,7 @@
       "settings": {
         "meta_descr": "Site Builder Description",
         "title": "ПРАВАПІС А/ О/ Э/ Ы ",
-        "order": 4
+        "order": 5
       },
       "components": [
         {
@@ -375,7 +311,7 @@
       "settings": {
         "meta_descr": "Website Maker Description",
         "title": "ПРАВАПІС У /Ў",
-        "order": 7
+        "order": 8
       },
       "components": [
         {
@@ -403,7 +339,7 @@
       "settings": {
         "meta_descr": "Website Builder Description",
         "title": "ПРАВПІС Ы/І/Й ПАСЛЯ ПРЫСТАВАК",
-        "order": 9
+        "order": 10
       },
       "components": [
         {
@@ -431,7 +367,7 @@
       "settings": {
         "meta_descr": "Web Site Generator Description",
         "title": "ПРАВАПІС ПАДОЎЖАНЫХ ЗЫЧНЫХ",
-        "order": 5
+        "order": 6
       },
       "components": [
         {
@@ -459,7 +395,7 @@
       "settings": {
         "meta_descr": "Web Site Maker Description",
         "title": "ПРАВАПІС ПАДВОЕННЫХ ЗЫЧНЫХ",
-        "order": 6
+        "order": 7
       },
       "components": [
         {
@@ -487,7 +423,7 @@
       "settings": {
         "meta_descr": "Web Page Creator Description",
         "title": "ПРАВАПІС Е/Ё/Я",
-        "order": 8
+        "order": 9
       },
       "components": [
         {
@@ -515,7 +451,7 @@
       "settings": {
         "meta_descr": "Web Site Generator Description",
         "title": "Знакі прыпынку ў бязлучнікавым сказе",
-        "order": 12
+        "order": 13
       },
       "components": [
         {
@@ -550,7 +486,7 @@
       "settings": {
         "meta_descr": "Website Builder Description",
         "title": "Сінтаксіс",
-        "order": 11
+        "order": 12
       },
       "components": [
         {
@@ -615,7 +551,7 @@
       "settings": {
         "meta_descr": "Website Builder Description",
         "title": "Марфалогия",
-        "order": 13
+        "order": 14
       },
       "components": [
         {
@@ -676,7 +612,7 @@
       "settings": {
         "meta_descr": "Web Page Maker Description",
         "title": "ПРАВАПИС ГАЛОСНЫХ У СКЛАДАНЫХ",
-        "order": 10
+        "order": 11
       },
       "components": [
         {
@@ -697,6 +633,35 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        }
+      ]
+    },
+    "page18.html": {
+      "settings": {
+        "meta_descr": "Website Builder Description",
+        "title": "ПРАВАПІС Ь І '",
+        "order": 3
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#232323",
+              "text-align": "left"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Кнопки\" name=\"showButtons\">\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">Правапіс ь і '</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\">*<b>Мяккі знак пішацца: </b>\n                <div>1)пасля зычных  <b>[З'] [С'] [ДЗ'] [Ц'] [Л] [Л'] [Н'] </b>перад галоснымі Е Ё Я Ю І\n</div><div>&nbsp; -<i>мільён, паштальён, кампаньён  АЛЕ: булён, нюанс </i>       \n</div><div>2)на канцы слоў пасля<b> [ДЗ'] [Ц'] [З'] [С'] [Л'] [Н']\n</b></div><div>&nbsp;-<i>роўнядзь, памяць, лось</i>\n</div><div>3)у сярэдзіне слова <b>пасля МЯККАГА</b> зычнага <b>перад ЦВЁРДЫМ</b> <br>&nbsp;-<i>малацьба, бацька, пісьмо\n</i></div><div>4)паміж <b>дзвюма МЯККІМІ</b> зычнымі калі пры змяненні слова другі зычны становіцца цвёрдым, а першы застаецца мяккім\n</div><div>-<i>цьмяны-цьма, дзьме-дзьмуць\n</i></div><div>5)пасля <b>[л']</b>, перад зычным, акрамя л\n</div><div>-<i>вельмі , гульня</i>\n</div><div>6)у <b>складаных лічэбніках\n</b></div><div>-<i>пяцьдзясят, шэсцьдзясят, пяцьсот АЛЕ восемсот\n</i></div><div>7)у займенніках і прыслоўях з постфіксам <b>сьц</b>і\n</div><div><i>-хтосьці, кагосьці\n</i></div><div>8)прыслоўе <b>ЛЕДЗЬВЕ \n</b></div><div>9)суфкісы прыметнікаў <b>эньк, еньк, аньк\n</b></div><div><i>-маленькі, старэнькі\n</i></div><div>10) перад суфіксам<b> СК</b> у прыметніках , утвораных ад <b>назваў месяцаў</b> на <b>нь\n</b></div><div><i>-чэрвень-чэрвеньскі, ліпень-ліпеньскі І ВОСЕНЬ-ВОСЕНЬСКІ\n</i></div><div>11) у дзеясловах загаднага ладу <b>перад</b> постфіксам <b>ся</b>, перад <b>ць</b> у форме<b> 2 асобы</b>, множнага ліку, калі у гэтых дзеяловах у адзіночным ліку, 2 асобы дзеяловы заканчываюца на <b>Ь</b> \n</div><div><i>-кіньце- кінь, сядзьце-сядзь, сустрэнься-сустрэнь\n</i></div><div>12)<b>перад</b> канчаткам <b>мі</b> у <b>назоўніках</b> 1 скл. мн.л.\n</div><div><i>-дзецьмі, людзьмі\n</i></div><div>13)перад суфіксам <b>чык</b> у <b>назоўніках</b>,якія заканч. на <b>нь</b>\n</div><div><i>-агеньчык- агонь, каменьчык- камень АЛЕ вагончык-вагон\n</i></div><div>14)перад <b>канчаткам ма </b>дзеясловаў <b>1 ас., мн.л.\n</b></div><div><i>-кіньма, гляньма</i></div><br><br><div><b>*Мяккі знак не пішацца:\n</b></div><div>1)паміж <b>падоўж</b>. зычнымі\n</div><div><i>-жыцце, насенне\n</i></div><div>2)<b>перад [В']</b> (асіміляцыя па мяккасці)\n</div><div>-<i>цверды, дзверы, абедзве\n</i></div><div>3) <b>МЕНШ , ІНШЫ\n</b></div><div>4)<b>пасля губных </b>на канцы слова\n</div><div><i>-стэп, верф, голуб\n</i></div><div>5)у <b>прыметніках</b> утвораных пры дапамозе суфікса<b> ск </b>ад назоўнікаў з асновай на <b>нь\n</b></div><div><i>-Гырынь- гарынскі, Любань-любанскі\n</i></div><div>6)у <b>кітайскіх</b> назвах\n</div><div><i>-Цянь-Шань -- цянь-шанскі</i></div><br><br><div><i>\n</i></div><div><b>*Апостраф  пішацца:\n</b></div><div>1)пасля <b>прыставак</b>, якія заканчваюцца на <b>зычную</b>, перад <b>е, ё,\n&nbsp;</b><span style=\"font-size: 1rem;\"><b>ю, я, і</b> <br><i>- аб'ехаць, аб'інець&nbsp;</i></span></div><div>2)у сярэдзіне слова пасля губных <b>(Б, В, М, П, Ф</b>) і пасля <b>Г К Х\n</b></div><div><i>-сям'я,  вераб'і,  В'етнам</i>\n</div><div>3) пасля зацвярдзелых зычных <b>( Р, Ц, Ж, Ш, Ч, ДЖ, <br>ДЗ, Ў)\n</b></div><div><i>-бар'ер, надвор'е\n</i></div><div>4<b>)пасля</b> цвёрдых <b>Д і Т</b> <br><i>- д'ябал, Сант'яга\n</i></div><div>5) У складаных словах 1-ая частка якіх <b>ДВУХ,  ТРОХ, ЧАТЫРОХ, ШМАТ</b> <br><i>- трох'ярусны, шмат'ёмісны</i>  &nbsp;\n</div><div><b>!!!!!  Ін'екцыя, кан'юктывіт, кан'юнктура, кан'югацыя <br></b></div><br><div><b>цэхячэйка, дзяржюрвыдаведства\n</b></div><div><br><br></div></h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.co\">ПОДРОБНЕЕ</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.co\">ДЕМО</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rZ37Pg5pAN",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content4-1o"
         }
       ]
     }
